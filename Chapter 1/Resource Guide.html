@@ -1,0 +1,265 @@
+<!--HTML and CSS Resource (Bonus - Optional)
+Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far (and a few extras) with a description of how to use them and code examples.
+
+Use an external stylesheet.
+Be creative with your styling, but keep it professional.
+Use the <code> and <pre> HTML tags to include code examples.
+Include a minimum of 10 HTML tags.
+Include a minimum of 8 CSS properties.
+Include a variety of different headers.
+Make sure the code is indented and spaced properly.-->
+
+<html>
+    <title>HTML/CSS Guide!</title>
+    <head>
+            <link rel = "stylesheet" href = "External Stylesheet Resource Guide.css">
+    </head>
+
+    <body>
+        <center>
+            <h1>Resource Guide</h1>
+            <h2>A quick reference to basic HTML and CSS code!</h2>
+            <h3>Covering tags, explanations and stylings to make your website functional and have backbone.</h3>
+        </center>
+
+        <hr>
+
+        <p>HTML stands for Hypertext Markup Language and uses tag-based code to describe the structure of a website/webpage.</p>
+        <p>CSS stands for Cascading Style Sheets and worries about the format and visuals of a website/webpage.</p>
+
+        <h4>Quickfire Keywords</h4>
+        <aside>
+
+            Syntax - The structure or grammar for a high-programming language.<br>
+            Opening tag - The beginning tag infront an html line of code.<br>
+            Closing tag - The ending tag is at the end of an HTML line of code.<br>
+            Content - What's written between the opening and closing tag.<br>
+            Element - The entire line of code; the opening tag, closing tag and content.<br>
+
+            External Styling - Linking an HTML document to a CSS file (separate from the HTML document).<br>
+            Internal Styling - Writing CSS code in the same file as the HTML document.<br>
+            Inline Styling - Using 'style' inside an html tag to change the properties of an element.<br>
+
+        </aside>
+
+        <dl>
+            <center>Let's begin with HTML, as it's the basic skeleton of most websites in the Internet.</center>
+            <br>
+
+            <hr>
+            <h4>HTML</h4>
+
+            <div class = "row">
+                <div class = "column">
+                    <dt><code>htmL</code></dt>
+                    <dd>In any sketchbook or program dedicated to multiple high level languages, the tag specifies the file you save the code as as html.
+                         Or, if you have multiple instances of programming languages in the same file, the tag helps classify which sections are in html
+                         (although that might be redundant, as it's better grouping code in one particular section rather than making multiple sections).</dd>
+                    <br>
+
+                    <dt><code>head</code></dt>
+                    <dd>The head tag concerns the metadata of a website, the unstructured data in a website; things like keywords for the 
+                         type of content inside the html site or the title of the tab. (Example: if your site is a business website, the head tag
+                         will include it's specificities, is it for a company or a standalone educational website?)</dd>
+                    <br>
+
+                    <dt><code>style</code></dt>
+                    <dd>The style tag is a means to introduce CSS styling into your HTML document. Anything between the opening and closing tag are
+                         considered CSS code, this uses a different syntax than HTML (internal styling). This word can be put within a tag as well and can 
+                         also be used for inline styling.</dd>
+                    <br>
+
+                    <dt><code>body</code></dt></li>
+                    <dd>As the name suggests, this contains everything inside the HTML document. (Note: Styling an entire document would be easier if everything 
+                         were to be inside this tag).</dd>
+                    <br>
+
+                    <dt><code>h1-h6</code></dt>
+                    <dd>These are called Heading tags and in their most basic format highlight the headings of a webpage. The different font sizes are in descending order
+                         with the "h1" tag being the largest size. Every Heading tag is typically with a large font, this stands out from the body text and is styled 'bold'.</dd>
+                    <br>
+
+                    <dt><code>em</code></dt>
+                    <dd>A format tag used to make the content within the tags (text-based content) in the italics style.</dd>
+                    <br>
+
+                    <dt><code>p</code></dt>
+                    <dd>This is the paragraph tag. When used continously, the content between the tags are spaced with blank lines and treated like paragraphs.</dd>
+                    <br>
+                </div>
+
+                <div class = "column">
+                    <dt><code>marquee</code></dt>
+                    <dd>A tag which gives an animation attribute to any content (text, image, video, etc...). The default settings is a slow horizontal panning 
+                         of the content form right to left.</dd>
+                    <br>
+
+                    <dt><code>id</code></dt>
+                    <dd>A unique label for an element, primarily for identification and also for inline styling. It can be given to one HTML element.</dd>
+                    <br>
+
+                    <dt><code>class</code></dt>
+                    <dd>This is a kind of classification or grouping function, it's useful for external and internal styling and can change 
+                         the attributes of multiple elements in an HTML document.</dd>
+                    <br>
+
+                    <dt><code>div</code></dt>
+                    <dd>A tag which marks a section in an html document, it separates elements outside of the tag by containing it and allocate 
+                         CSS styling to the element/elements inside using class or id attribute(s).</dd>
+                    <br>
+            
+                    <dt><code>dl</code></dt>
+                    <dd>A dl, is a description list and is used with <code>dt</code> and <code>dd</code> to create formatted text.</dd>
+                    <br>
+
+                    <dt><code>dt</code></dt>
+                    <dd>This is called a 'Description Title', it introduces what the description <code>dd</code> will be about.</dd>
+                    <br>
+
+                    <dt><code>dd</code></dt>
+                    <dd>This the 'Description Description'. Yes. Inside this tag, you can describe the subject written in the <code>dt</code>
+                         and it will leave a small indentation and then the following content added between the <code>dd</code> tags.
+                         Any images, videos or embedded links are considered.</dd>
+                    <br>
+                </div>
+            </div>
+        </dl>
+
+        <hr>
+
+        <br>
+        <h4>CSS</h4>
+        <h3>Example 1</h3>
+        <span class = "column" id = "code">
+         h1 {
+             font-family: "Anton", sans-serif;
+             font-weight: 500;
+             letter-spacing: 3;
+             font-size: 35;
+            }
+        </span>
+
+        <br>
+        <div class = "column">
+            This is an example of CSS code responsible for styling the h1 tag. Styling html tags are possible this way and are a
+            direct alteration (what I consider 'indirect' is using class and ids). This overwrites or adds on to the properties
+            of what the h1 tag provides by default. The next time a <code>h1</code> tag is used again, it will have the following.
+        
+
+            <br><br>
+
+            An unstyled h1 tag would look like this:
+            <h1 id = "ogh1">Resource Guide</h1>
+        </div>
+
+        <br>
+        <h3>Breakdown</h3>
+        <br>
+
+        <div class = "row">
+
+            <div class = "column" id = "code">font-family: "Anton", sans-serif; </div>
+            <div class = "column">
+             This changes the font of text in the HTML document when called. The font name is "Anton" and is wrapped in quotations 
+             (Note: Font names require the whitespace inbetween; like calling upon another family like "Comic Sans MS"), this is the first 
+             arguement taken by the property. The second arguement 'sans-serif' works as a keyword and specifies what kind of style the 
+             alphabets/characters the font would have (sans, cursive, monospace, etc.)
+            </div>
+        
+            <br />
+
+            <div class = "column" id = "code">font-weight: 500;</div>
+            <div class = "column">
+                 A simple property that changes the thickness of the letters in the text. 
+                 The higher the value, the bolder the letters.
+            </div>
+
+            <br />
+
+            <div class = "column" id = "code">letter-spacing: 3;</div>
+            <div class = "column">
+                 This property is self-explanatory and increases or decreases the spacing inbetween letters.
+            </div>
+
+            <br />
+
+            <div class = "column" id = "code">font-size: 35;</div>    
+                <div class = "column">
+                This changes the size of the font.
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h3>Example 2</h3>
+        <br>
+
+        <span class = "column" id = "code">
+         .column {
+             text-align: justify;
+             float: left;
+             width: 45%;
+             padding: 20px;
+            }
+        </span>
+
+        <br>
+        <div class = "row">
+            <div class = "column">
+             This is an example of a 'class'. It has properties that edits the space a content would be inside of. This can supply 
+             changes to multiple elements in an HTML document, keeping them in the same format/container. Especially important when keeping
+             consistency in a website.<br>
+            </div>
+
+            <br />
+            <h3 style = "transform: translateX(-49%);">Breakdown</h3>
+            <br>
+
+            <span class = "column" id = "code">text-align: justify;</span>
+            <div class = "column">
+                Changes the horizontal alignment of text with justify, center, left or right.
+            </div>
+
+            <br />
+
+            <span class = "column" id = "code">float: left;</span>
+            <div class = "column">
+                This property can be similar to alignment types, with left or right but with an additional 'none' arguement.
+                When content is added into an HTML doc, it takes up horizontal space along with it's vertical height 
+                due to it's default container. Float allows elements and text to wrap around the content. This kind of
+                formatting property is useful in keeping relevant information next to each other and reducing extra white space.
+            </div>
+
+            <br />
+
+            <span class = "column" id = "code">width: 45%;</span>
+            <div class = "column">
+                Changes the width of a content's container, anything exceeding the limit set by the user will be added to the next line.
+            </div>
+
+            <br />
+
+            <span class = "column" id = "code">padding: 20px;</span>
+            <div class = "column">
+                Padding concerns the space between the container and the content inside it. It can be useful when spacing content 
+                next to other content.
+            </div>
+
+            <br /><br>
+            <hr>
+            <br><br>
+
+            <center> 
+                Extra: To do External Styling, make sure to include this code in your <code>head</code> section.
+                <br>
+                (It's also advisable to have the CSS file in the same directory as your HTML document.)
+                <br>
+                <code>  link href = "stylesheet" href "locationoffile.css" </code>
+            </center>
+            <br>
+
+        </div>
+    </body>
+</html>

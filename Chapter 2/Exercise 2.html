@@ -1,0 +1,200 @@
+<!--One-page website ☑️
+Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+
+An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find.
+A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+A link to the actual website of the film/game etc. which opens in a new tab when clicked.
+Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+At least two classes.
+One link styled as a button.
+-->
+
+<html>
+    <title>DJANGO UNCHAINED</title>
+    <head>
+        <!--The link tag helps define the relationship of this internal file to an external source, in this instance, a CSS file.
+        'href' is an attribute that specifies the location of the file, since it's in the same directory as this file, we just need 
+        the name of the file.-->
+        <link rel = "stylesheet" href = "External Stylesheet.css">
+    </head>
+
+    <h1><strong>DJANGO UNCHAINED</strong></h1>
+    <!--This is an example of External Styling, in this case a class with the name of "subheads" is taken from 'External Stylesheet.css'.-->
+    <div class = "subheads">Life, liberty and the pursuit of revenge.</div>
+
+    <br><br>
+
+    <body>
+        <!--'a' can be used to assign clickable internal links.-->
+        <!--'href' is referring to the html bodies with <section id = "__">.-->
+        <!-- Combining these two together, clicking on the link will lead the user to the specified section (with that same id) directly.-->
+
+        <div class = "nav">
+         <a href = "#Overview">Overview</a>
+         <a href = "#Cast">Cast</a>
+         <a href = "#CreativeTeam">Creative Team</a>
+         <a href = "#KeyFacts">Key Facts and Info</a>
+         <a href = "#Characters">Characters</a>
+         <a href = "#Reviews">Reviews</a>
+        </div>
+
+        <hr> <!--This is a horizontal line, it acts as a divider-->
+
+    <div class = "content"> <!--I used a div class here, and I'm not sure of it's purpose, I believe it's to identify all the sections as 'content'.-->
+         <section id = "Overview">
+
+         <h2>Overview</h2>
+         <div class = "subheads2">
+             Written and directed by Quentin Tarantino, the movie follows the story of a young Afro-American slave by the name of Django who has been
+             recently freed from the toils of slavery and taken under apprenticeship by a German bounty hunter, they surmise efforts
+             together to eventually rescue his wife who has been bought by a brutal plantation owner in Mississipi.
+         </div>
+
+         <br></section>
+         
+            <!--I used Inline Styling here because I thought it'd be faster if I wrote the CSS in the same line as the element.
+             Rather than going to the external stylesheet, writing a separate id, noting down different properties and then
+             assigning it in the html file, only to have a slight variations of the same element.-->
+            <center> 
+                <h4 style = "text-align:left;"><q>I count six shots.</q></h4>
+                <h4 style = "text-align:right; color:rgb(92, 34, 18);margin-trim: 20;"><q>I count two guns.</q></h4>
+            </center>
+
+            <br>
+            <hr style = "width:70%;">
+
+        <section id = "Cast">
+             <h2>Cast</h2>
+             <div class = "centered">
+                  Django as Jamie Foxx 
+                  Dr. King Schultz as Christoph Waltz 
+                 <br>
+                 Calvin Candie as Leonardo DiCaprio
+                 <br>
+                 Broomhilda von Shaft as Kerry Washington
+                 <br>
+                 Stephen as Samuel L. Jackson
+                 <br>
+                 ...and more!
+            </div>
+        </section>
+
+        <section id = "CreativeTeam">
+         <h2>Creative Team</h2>
+         <div class = "centered">
+             Directed by Quentin Tarantino
+             <br>
+             Assistant Directors, William Paul Clark and Greg Hale
+             <br>
+             Produced by Stacey Sher, Reginald Hudlin, Pilar Savone and William Paul Clark
+             <br>
+             Cinematography by Robert Richardson
+             <br>
+             Casting by Victoria Thomas
+             <br>
+             ...and more!
+         </div>
+        </section><br>
+
+        <hr>
+        <br>
+
+        <section id = "KeyFacts">
+          <h2>Key Facts and Interesting Tidbits!</h2>
+          It's important to note that the movie is a work of fiction, but inspired by a real historical time period. This is set
+          in 1858, an age in pre-Civil War South America notorious for the movement of slave trading. All characters are not related to any actual, real human persons
+          or real events but inspired by their time sensitive elements.
+
+          <dl>
+             <dd>Released in December 25th 2012, originally premiered in December 11 2012 in Ziegfield Theatre.</dd>
+             <dd>This is Quentin Tarantino's eight film.</dd>
+             <dd>Django Unchained shouldn't be confused as a sequel/relation to another western of a similar title 'Django', 1967.</dd>
+             <dd>Django Unchained won two oscars, 58 wins and 158 nominations in total, the most notable being 
+                 an oscar winner for Best Original Screenplay.</dd>
+             <dd>The movie was so acclaimed, it had a seven volume graphic novel adaptation. Includes scenes from the original draft
+                 of D.U where Django gave the remaining inhabitants of the Candyland plantation a six versus one duel, Broomhilda's
+                 point of view after being sold off and more depth to Django being under Dr. Schultz wing. </dd>
+             <dd>A mistake in Django Unchained involves the several usages of dynamite onscreen, despite it being invented in 1867,
+                 9 years after the time setting.</dd>
+             <dd>In the near end of the movie, Quentin Tarantino himself starred as a racist mining company transporter
+                 and gets blown up by said dynamite.</dd>
+             <dd>The genres for this movie are Western and Drama. Rated R for graphic violence, language and some nudity.</dd>
+             <dd>Django's lead was originally Will Smith, but the actor rejected. However, Quentin Tarantino met Jamie Foxx, and was instantly sold.</dd>
+          </dl>
+       </section>
+
+        <section id = "Characters">
+         <h2>Characters</h2>
+         <strong><h4>Django</h4></strong>
+         <h3><q><em>D-J-A-N-G-O. The 'D' is silent.</em></q></h3>
+         <div class = "subheads">
+             The main character of the story, an afro-american former slave and presently a sharpshooting, skilled bounty hunter. And, in the words
+             of his mentor 'The fastest gun in the South'. He's also the husband of Broomhilda Von Shaft, who was separated from her after being sold
+             to different slavers for attempting to escape together. His full name, Django Freeman, a name he picked out as a statement of his freedom
+             and unbridled spirit. With Schultz's guidance made his expert marksmanship and the man he is today. Eventually, they work together
+             as partners to get his wife back.
+         </div>
+         <br>
+        
+         <strong><h4>Dr. King Schultz</h4></strong>
+         <h3><q><em>Oh, and on the off chance that there's any astronomy aficionados amongst you, the North Star is THAT ONE. Tata.</em></q></h3>
+         <div class = "subheads">
+             A German ex-dentist pro bounty hunter who crossed roads with Django and freed him. An abolitionist from Düsseldorf who is of
+             much culture as intelligence, previously having 5 years of dentistry to his name before becoming a bounty hunter in 1853. 
+             He befriends young Django later on, and become partners in a bounty hunter duoship, agreeing to help rescue his wife.
+             <br>
+         </div>
+         <h5><center>Random fact: During a horse riding training session, the actor for Dr. Schultz had fallen off a saddle 
+            whilst ontop a horse, breaking his pelvis.</center></h5>
+
+         <br>
+
+         <strong><h4>Calvin Candie</h4></strong>
+         <h3><q><em>Gentlemen, you had my curiosity, but now you have my attention.</em></q></h3>
+         <div class = "subheads">
+             The main antagonist of Django Unchained, a Francophile plantation owner of Candyland, the fourth largest cotton plantation in Mississipi--
+             inherited from his parted father. A wealthy, brutal and powerful man with a great deal of influence and is well within the slave business; apparently
+             being the owner of Broomhilda.
+         </div>
+
+         <br>
+
+         <strong><h4>Broomhilda Von Shaft</h4></strong>
+         <h3><q><em>Hey Big Troublemaker.</em></q></h3>
+         <div class = "subheads">
+             Also known as her other name, Hildi, is Django's wife and came to be under Candyland's hold as a slave. Her name is derived of a German 
+             fairytale. Due to the fact that her former masters were German and taught her the language itself. She married Django under their
+             ownership by the Brittle Brothers before being separated after their escape attempt.
+         </div>
+
+        </section>
+
+        <br>
+
+        <section id = "Reviews">
+
+         <h2>Reviews!</h2>
+         <dl><div class = "centered">
+             <dt><q>I have to face it: Quentin Tarantino’s 'Django Unchained' is his most entertaining piece of moviemaking since 'Pulp Fiction.'</q></dt>
+             <dd><em>- David Denby, The New Yorker</em></dd><br>
+
+             <dt><q>My favourite Tarantino, and that's a bold statement.</q></dt>
+             <dd><em>- Sleepin_Dragon, IMDb</em></dd><br>
+
+             <dt><q>When I first saw Quentin Tarantino's Django Unchained, I wrote that it was as deplorable and delicious as a forbidden cigarette.
+                    This second time around I'm still dizzy, from something meaner than nicotine. </q></dt>
+             <dd><em>- Peter Bradshaw, The Guardian</em></dd><br>
+
+             <dt><q>christoph waltz is my very best friend</q></dt>
+             <dd><em>- feat. dante from the dmc series, Letterboxd</em></dd><br>
+         </dl></div>
+        </section>
+
+        <hr>
+        
+    </div></body>
+    <br>
+    <h2>Don't forget to check out the actual website!</h2>
+    <center><button onclick="window.location.href='https://www.facebook.com/unchainedmovie';">OFFICIAL SITE!</button></center>
+    <br>
+</html>

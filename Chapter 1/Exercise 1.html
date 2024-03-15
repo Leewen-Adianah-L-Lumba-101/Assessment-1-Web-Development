@@ -1,0 +1,125 @@
+<!--Recipe page ☑️
+Create a web page containing information on your favourite recipe. The page should include
+
+Appropriate tags to structure text (e.g. h and p tags).
+A h1 tag for the recipe name
+A p tag for a description of the recipe
+A h2 tag for the ingredients
+An unorder list for the ingredients
+An h2 tag for the method
+An order list for the steps involved in the recipe 'method'
+Make sure the code is indented and spaced properly.
+Add comments explaining what each element does.
+-->
+
+<!--The <html> tag marks the start of the code for the website.-->
+<html>
+
+    <!--The <title> tag is used to name the tab of the html website. At the top left corner.-->
+    <title>My Favourite Recipe</title>
+
+    <!--<h1> is called a Heading tag, and will automatically format the text between the tags as the largest size and as bold.-->
+    <h1>Strawberry Crumb Cake</h1>
+
+    <!--<p> stands for paragraph, any text between the tags will include a blank line before and after the <p> and </p>.-->
+    <p>This recipe will detail the ingredients, baking utensils and process for a delicious, crumbly, sumptious and fruity 
+        dessert (courtesy to my baker friend for helping me obtain the instructions!)</p>
+
+    
+    <!--The <h2> tag is Heading 2, it formats the text between the tags as the second largest size to Heading 1 and as bold.-->
+     <h2>Ingredients</h2>
+     <ul style = "list-style-type:square;"> <!--<ul> stands for 'unordered list', a symbol is used to present the bullet points.
+                                            In this case, "list-style-type:square;" changes the usual circle bullet points with a square.-->
+
+        <strong>Batter:</strong>                <!--<strong> simply formats the text between as bold, another font-family style.-->
+
+        <li>1/4th cup of softened butter</li>   <!--<li> is used to show that the items between the tags belongs to the list above.-->
+        <li>2/3rd cup of granulated sugar</li>
+        <li>1 tbsp of oil</li>
+        <li>1 Egg (larger size preferrable)</li>
+        <li>6 tbsps of milk</li>
+        <li>1 tbsp of vanilla extract</li>
+        <li>1/4th cup of flour</li>
+        <li>1/4th tbsp baking soda</li>
+        <li>1/2 tbsp baking powder</li>
+        <li>1/4th tbsp salt</li>
+
+        <br> <!--<br> stands for break, it sections content by adding a line inbetween them.-->
+
+        <strong>Filling:</strong>
+        <li>600-700g of frozen strawberries</li>
+        <li>1 tbsp of lemon/lime juice</li>
+        <li>1-2 tbsp of sugar</li>
+        <li>2 tbsps of flour</li>
+
+        <br>
+
+        <strong>Crumb:</strong>:
+        <li>1/4th cup of flour</li>
+        <li>1/4th cup of brown sugar</li>
+        <li>1/2 tbsp of cinnamon</li>
+        <li>2 tbsps of solid butter</li>
+
+        <br>
+
+        <strong>Final touches</strong>:
+        <li>4 tbsps of milk</li>
+
+    </ul> <!--At the end of the list, the tag is ended with a backslash and the type of tag used.-->
+
+    <!--To use an image and insert it in the html website, the tag img is used, src means source and requires an external or internal img address-->
+    <img src = "https://amycaseycooks.com/wp-content/uploads/2015/03/Webp.net-resizeimage-2021-04-24T082503.076.jpg" width = 500px height = 740px 
+    style = "float: left; padding: 30px;">
+    <!--The purpose of style is to make sure the image doesn't take up unneccessary white space, I go more into detail in the Resource Guide in
+    regards to style, float and padding. I used 'inline styling' here because I only styled one single element for the entire exercise.-->
+
+    <br>
+
+    <h2>Method</h2>
+    <ol type = "1"> <!--<ol> means ordered list, everything that is under the indentions are assigned an ascending/descending value.
+                        In this case, the type of ascension is numerical as the 'type' is "1".-->
+         <strong>Batter: </strong>
+         <li>In a bowl, beat the 1/4th cup of softened butter (making sure the butter is room temperature) 
+             with 2/3rds of granulated sugar until the mixture is light in colour. </li>
+         <li>Then, whisk in the 1 tbsp of oil until it's fully dissolved.</li>
+         <li>Crack an egg open and continue beating until the batter is fluffy.</li>
+         <li>Once fluffy, pour in 6 tbsps of milk along with 1 tbsp of vanilla extract (as usual, continue mixing).</li>
+         <li>In second bowl, mix 1/4th cup of flour, 1/4th tbsp of baking soda, 1/2 tbsp of baking powder 
+             and 1/4th tbsp of salt together. </li>
+         <li>Once mixed, add the second bowl to the first bowl, then whisk continously until all the lumps are gone. </li>
+
+         <br>
+
+         <strong>Filling:</strong>
+         <li>In a saucepan at medium low heat, cook the 600-700g of frozen strawberries until the juices have seeped out.</li>
+         <li>Add the 1 tbsp of lemon/lime juice, then add 1-2 tbsp(s) of sugar to taste.</li>
+         <li>Stir well, then let it simmer until the filling has slightly thickened.</li>
+         <li>Once at the desired texture, sprinkle in the 2 tbsps of flour.</li>
+         <li>Stir until dissolved. Once done, turn the stove off and let it cool.</li>
+
+         <br>
+
+         <strong>Crumb:</strong>
+         <li>Chop 2 tbps of solid, cold butter on a cutting board.</li>
+         <li>In a new bowl, add 1/4th cup of flour, 1/4th cup of brown sugar and 1/2 tbsp of cinnamon.</li>
+         <li>It's advisable to mix this with your hands, if not a spatula. Add in the chopped butter pieces.</li>
+
+         <br>
+
+         <strong>Assembly:</strong>
+         <li>Preheat the oven to 175°c.</li>
+         <li>Prepare preferred baking pan with parchment paper.</li>
+         <li>Add half of the batter into the lined pan, using a clean spatula to evenly spread it.</li>
+         <li>Add the filling made previously, using a spatula again to have an equal spread.</li>
+         <li>Pour 4 tbsps of milk into the remaining batter and mix well.</li>
+         <li>Pour the mixed batter left on top of the filling layer.</li>
+         <li>With a chopstick or thin appliance, make swirling patterns on the baking pan.</li>
+         <li>Then, when enough swirls are made to your liking, add the crumb mix on top evenly.</li>
+         <li>Bake the cake inside the oven for ~45 minutes.</li>
+         <li>Occassionally, check with a toothpick to test if certain parts of the cake have been baked (adjust the time
+             to 2 or more minutes if desired).
+         <li>Once finished, let the cake cool for 15 minutes then serve.</li>
+         <li>Enjoy!</li>
+
+    </ol>
+</html>
