@@ -7,7 +7,7 @@ body {
     font-size: 18px;
     text-align: center;
     margin-left: 32%;
-    margin-top: 5%;
+    margin-top: 2%
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 /* The purpose of the wrap class is to have the basis for the column system I'm trying to format. */
 .wrap {
     width: 500px;
-    height: 400px;
+    height: 370px;
 }
 
 /* The purpose of the content id is to identify which parts of the html document require the column format. */
@@ -34,14 +34,13 @@ h1 {
     width: 40%;
     height: 30%;
     text-transform: capitalize;
-
 }
 
 input {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
-    background-color: rgb(110, 53, 110);
+    background-color: rgb(117, 64, 122);
     color: aliceblue;
     padding: 20px, 20px;
     padding-bottom: 5px;
@@ -53,7 +52,7 @@ input {
 /* Not sure why this isn't working, the functionality of input:hover made me believe that it would be possible to style the 'button'
     when it's pressed but somehow the html is not responding.*/
 input:active {
-    background-color: rgb(73, 47, 91);
+    background-color: #492f5b;
     color: rgb(13, 29, 44);
 }
 
