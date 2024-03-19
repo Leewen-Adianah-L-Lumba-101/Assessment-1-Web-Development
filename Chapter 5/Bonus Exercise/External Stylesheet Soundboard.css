@@ -1,0 +1,65 @@
+body {
+    background-image: url('purple.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: darkslategrey;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 32%;
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color:aliceblue;
+    text-align: center; 
+    margin-left: -480px;
+    letter-spacing: 2px;
+}
+
+/* The purpose of the wrap class is to have the basis for the column system I'm trying to format. */
+.wrap {
+    width: 500px;
+    height: 400px;
+}
+
+/* The purpose of the content id is to identify which parts of the html document require the column format. */
+#content {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 40%;
+    height: 30%;
+    text-transform: capitalize;
+
+}
+
+input {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgb(110, 53, 110);
+    color: aliceblue;
+    padding: 20px, 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-radius: 30px;
+    border: 3px solid rgb(180, 173, 178);
+}
+
+/* Not sure why this isn't working, the functionality of input:hover made me believe that it would be possible to style the 'button'
+    when it's pressed but somehow the html is not responding.*/
+input:active {
+    background-color: rgb(73, 47, 91);
+    color: rgb(13, 29, 44);
+}
+
+input:hover {
+    background-color:rgb(109, 88, 120);
+    font-size: 16px;
+    color: rgb(19, 43, 65);
+    transform: scale(110%);
+}

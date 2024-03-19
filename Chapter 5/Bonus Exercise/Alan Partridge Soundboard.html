@@ -1,0 +1,58 @@
+<!--Alan Partridge Soundboard (Bonus - Optional)
+A local comedy radio show needs you to develop an audio soundboard for them. The soundboard will display a grid of Alan Partridge samples. When a sample is clicked the associated audio file will play. The audio samples for this exercise are located in Exercises/Audio Sampler. Your sampler must:
+
+Include all of the samples in the Audio Sampler directory;
+Display all samples on a single non-scrolling page;
+Make use of correct semantic markup;
+Display the correct sample name;
+Change the colour of the background, and text, when the user hovers over a sample;
+Include index.html, style.css and index.js files;
+Include creative styling for your background, sample buttons, fonts and hover effects;
+Use the below example as a reference:
+-->
+
+<html>
+    <head>
+        <title>Alan's Soundboard</title>
+        <link rel = "stylesheet" href = "External Stylesheet Soundboard.css">
+        <script src = "Audio Playback.js"></script>
+    </head>
+
+    <body>
+        <h1>ALAN PARTRIDGE SOUNDBOARD</h1>
+        <div class = "wrap">
+            <!--I am aware that there should be a separate file for Javascript, I could not get the function to work with multiple ids.
+            When you use a function, you require a parameter, but what kind of parameter do I give? I can't just use the getElementById
+            in that function because the id for every audio file is unique, that cannot be given empty text either either, it would not
+            execute the file correctly. I find it frustrating and I don't have enough knowledge or creativity to execute my idea. 
+            I scrapped the external script entirely; I made an attempt previously, but each button only played the first audio, 
+            so I cannot settle for that in my exercise. You can see the remnants of my attempt on line 18.-->
+
+            <input type = "button" value = "Ah-ha!" onclick = "document.getElementById('audio').play()" id = "content">
+            <audio id = "audio" src = "Audio Sampler/Audio/ah-ha.mp3"></audio>
+
+            <input type = "button" value = "Dan" onclick = "document.getElementById('audio2').play()" id = "content">
+            <audio id = "audio2" src = "Audio Sampler/Audio/dan.mp3"></audio>
+
+            <input type = "button" value = "Back of the Net" onclick = "document.getElementById('audio3').play()" id = "content">
+            <audio id = "audio3" src = "Audio Sampler/Audio/back-of-the-net.mp3"></audio>
+
+            <input type = "button" value = "Bang! Out of Order" onclick = "document.getElementById('audio4').play()" id = "content">
+            <audio id = "audio4" src = "Audio Sampler/Audio/bangoutoforder.mp3"></audio>
+
+            <input type = "button" value = "Hello Partridge" onclick = "document.getElementById('audio5').play()" id = "content">
+            <audio id = "audio5" src = "Audio Sampler/Audio/hellopartridge.mp3"></audio>
+
+            <input type = "button" value = "I Ate A Scotch Egg" onclick = "document.getElementById('audio6').play()" id = "content">
+            <audio id = "audio6" src = "Audio Sampler/Audio/iateascotchegg.mp3"></audio>
+
+            <input type = "button" value = "I'm... Confused" onclick = "document.getElementById('audio7').play()" id = "content">
+            <audio id = "audio7" src = "Audio Sampler/Audio/imconfused.mp3"></audio>
+
+            <input type = "button" value = "Email of the Evening" onclick = "document.getElementById('audio8').play()" id = "content">
+            <audio id = "audio8" src = "Audio Sampler/Audio/emailoftheevening.mp3"></audio>
+
+        </div>
+    
+    </body>
+</html>

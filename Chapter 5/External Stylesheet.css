@@ -1,0 +1,29 @@
+#image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%) translateX(-50%);
+    filter: drop-shadow(10px 10px 10px black);
+    z-index: 1;
+}
+
+#video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+}
+
+body {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-image: url('epicbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

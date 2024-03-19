@@ -1,0 +1,64 @@
+<!--Study planner (Bonus - Optional)
+Imagine you have been employed to build a single-page web application that manages a study plan for the Web Development module on the Creative Computing course. Use HTML and CSS to mock-up what this application would look like, without adding any interactivity. You must include:
+
+Wireframe (add image to the directory);
+Header, Navigation menu, main content and a footer;
+The main content must be split into two or three columns;
+Five demo items;
+Your HTML should use semantically correct elements;
+An external style.css file;
+The use of at least one button;
+The page does not need to be interactive;
+You should focus on the structure and visual layout of the page, but also consider design too;
+Commenting throughout.-->
+
+<html>
+    <head>
+        <title>Student Planner</title>
+        
+        <link rel = "stylesheet" href = "External Stylesheet Student Planner.css">
+    </head>
+
+    <body>
+        <header>
+            <div class = "navbar">
+                <a link = "#Home">HOME</a>
+                <a link = "#Calendar">CALENDAR</a>
+                <a link = "#Customize">CUSTOMIZE</a>
+                <a link = "#FAQ">FAQ</a>
+                <a link = "#Signup" style = "margin-left: +540px;">SIGN UP</a>
+            </div>
+        </header>
+
+        <div class = "sidebar">
+            <img src = "sidebar.svg">
+        </div>
+        
+        <div class = "main">
+            <div class = "datebar">
+               <span id = "time">03:10</span>pm  <span id = "icon"><</span> <span id = "month">MARCH 11 - MARCH 16 2024</span> <span id = "icon" style = "margin-left: +80px;">></span> <span id = "day">today / week / month</span>
+            </div>
+
+            <div class = "week">
+                <p>MONDAY</p>
+                <p>TUESDAY</p>
+                <p>WEDNESDAY</p>
+                <p>THURSDAY</p>
+                <p>FRIDAY</p>
+                <p>SATURDAY</p>
+            </div>
+
+            <img src = "Table.svg" id = "table">
+
+        </div>
+
+        <button>DARK MODE</button>
+
+        <footer>
+            © 2024 Student Planner Ltd.
+        </footer>
+
+
+    </body>
+
+</html>
