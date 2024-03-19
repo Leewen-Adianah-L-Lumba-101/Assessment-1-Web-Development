@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <head charset = "utf-8" />
+        <title>Text to Speech</title>
+
+    </head>
+
+    <body>
+        <script>
+            function textToAudio() {
+                let msg = document.getElementById("text-to-speech").value;
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "ja-JP";
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                window.speechSynthesis.speak(speech);
+            }
+        </script>
+
+        <div>
+            <input type = "text" id = "text-to-speech" placeholder = "Enter text to speak" />
+        </div>
+
+        <div>
+            <button type = "button" onclick = "textToAudio()"> Speak </button>
+        </div>
+
+        <div>
+            <p> <b> Note: </b> Enter text and click on the speak button. </p>
+        </div>
+
+    </body> 
+    
+</html>
+
+
+
+
+        
