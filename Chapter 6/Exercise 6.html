@@ -22,16 +22,19 @@ Clean and professional creative styling.-->
             <center>
                 <br />
                 <label>Petrol Calculator!</label><br /><br />
-
+                
+                <!--This form tag with an onReset attribute is to reset all the fields inside the opening and closing tags, once the button 'input type = reset' is clicked.-->
                 <form onReset = "res(FormData)">
                     <p>The cost of petrol per liter:</p>
+                    <!--The placeholder is added as 'water text' and only serves to guide the user that the miminum value is 1.72, it goes away once something is entered.-->
                     <input type = "number" placeholder = "1.72" id = "no1" min="1.72">
                     <br>
 
                     <p>The number of litres purchased:</p>
                     <input type = "number" placeholder = "0" id = "no2" min = "0">
                     <br><br><br><br>
-
+                    
+                    <!--In the external javascript file, both functions for petroltotal() and res() are accounted for.-->
                     <input type = "reset" name = "reset" value = "Reset">
                 </form>
                 <button onclick = "petroltotal()">Calculate</button>
@@ -39,6 +42,9 @@ Clean and professional creative styling.-->
                 <br>
 
                 <p>Total costs:</p>
+                <!-- Not entirely sure of the process here but what I believe is happening is that the id "total" is overwritten by the values of ids "no1" and "no2"
+                being multiplied together once the petroltotal() function is called respectively, so the content in the "total" is displayed regardless of whether something is between 
+                the div tags. This is seen in the JS file, which I will comment on.-->
                 <div id = "total"> </div>
                 <br><br>
             </center>
